@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Yazid Muttaqin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="logo">
+                <h1 class="animated-text">
+                    <span class="symbol">✧</span> Tsyyacz <span class="symbol">✧</span>
+                </h1>
+            </div>
+            <h1 class="animated-text">TASYA</h1>
+            <p class="animated-paragraph">Gadis Yang Tak Ada Duanya -_-</p>
+            <a href="https://wa.me/6283141170589?text=Halo%20bro,%20ayo%20mabar!" class="animated-button" target="_blank">Let's Go!</a>
+        </div>
+        <div class="gallery-container">
+            <div class="gallery">
+                <div class="gallery-item"><img src="1.jpg" alt="Gambar Gaming 1"></div>
+                <div class="gallery-item"><img src="2.jpg" alt="Gambar Gaming 2"></div>
+                <div class="gallery-item"><img src="3.jpg" alt="Gambar Gaming 3"></div>
+                <div class="gallery-item"><img src="4.jpg" alt="Gambar Gaming 4"></div>
+                <div class="gallery-item"><img src="5.jpg" alt="Gambar Gaming 1"></div>
+                <div class="gallery-item"><img src="6.jpg" alt="Gambar Gaming 2"></div>
+                <div class="gallery-item"><img src="7.jpg" alt="Gambar Gaming 3"></div>
+                <div class="gallery-item"><img src="8.jpg" alt="Gambar Gaming 4"></div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+    </div>
+  <div class="audio-button-container">
+    <button class="audio-button" onclick="playAudio()">
+<span>Play</span>
+        <!-- atau jika menggunakan teks -->
+        <!-- <span>Play</span> -->
+    </button>
+</div>
+    <!-- Audio Element -->
+    <audio id="myAudio" style="display: none;">
+        <source src="musik.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        function playAudio() {
+    var audio = document.getElementById("myAudio");
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+}
+
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
